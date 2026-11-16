@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hermes Classroom</title>
+<meta name="description" content="Hermes Classroom: a personal, single-user, read-only Google Classroom integration for deadline reminders.">
+<style>
+  :root { --bg:#f7f7f5; --fg:#1d1d1b; --muted:#5f5f5a; --line:#dcdcd6; --accent:#1f5f8b; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#151514; --fg:#ececea; --muted:#a3a39d; --line:#2e2e2b; --accent:#7fb6dd; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif; }
+  main { max-width:680px; margin:0 auto; padding:48px 16px 64px; }
+  h1 { font-size:28px; margin:0 0 4px; letter-spacing:-.01em; }
+  .tag { color:var(--muted); margin:0 0 32px; }
+  h2 { font-size:17px; margin:32px 0 8px; }
+  ul { padding-left:20px; }
+  code { font-size:14px; }
+  a { color:var(--accent); }
+  footer { margin-top:48px; padding-top:16px; border-top:1px solid var(--line); color:var(--muted); font-size:14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Hermes Classroom</h1>
+  <p class="tag">A personal, single-user Google Classroom integration for deadline reminders.</p>
+
+  <h2>What it is</h2>
+  <p>Hermes Classroom connects one student's own Google Classroom account to that student's
+  private assistant (a self-hosted Hermes Agent). Once a day it reads the student's classes,
+  their own coursework and submission status, and recent announcements, then sends a short
+  deadline summary to the student's own chat.</p>
+
+  <h2>What it is not</h2>
+  <ul>
+    <li>Not a public service. There are no sign-ups and no other users.</li>
+    <li>It never submits, edits, or deletes anything in Google Classroom. Access is read-only.</li>
+    <li>It does not show ads and does not sell or share data.</li>
+  </ul>
+
+  <h2>Permissions requested</h2>
+  <ul>
+    <li><code>classroom.courses.readonly</code> — list the student's classes</li>
+    <li><code>classroom.coursework.me.readonly</code> — the student's own coursework and submission status</li>
+    <li><code>classroom.announcements.readonly</code> — recent class announcements</li>
+  </ul>
+
+  <p>Read the <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Use</a>.</p>
+
+  <footer>Questions: open an issue at
+  <a href="https://github.com/stanlevv/hermes-classroom/issues">github.com/stanlevv/hermes-classroom</a>.</footer>
+</main>
+</body>
+</html>
